@@ -5,8 +5,11 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.util.Log
 
 import kotlinx.android.synthetic.main.activity_main.*
+
+private val TAG = MainActivity::class.java.simpleName
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,12 +22,18 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
+
+        println("TAG = $TAG")
+        Log.d(TAG, "my log is here")
+
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
