@@ -8,22 +8,92 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hi body!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/ic_user_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="5.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="610dp">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ButtonOlsarnat"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="226dp" />
+        <LinearLayout
+            android:layout_width="410dp"
+            android:layout_height="90dp"
+            tools:layout_gravity="bottom"
+
+            android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:layout_width="52dp"
+                android:layout_height="50dp"
+                android:background="@color/ic_user_background"
+                tools:layout_gravity="center">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="29dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/ic_user_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                tools:layout_gravity="center">
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:layout_gravity="center"
+                android:background="@color/ic_user_background">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/ic_user_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                tools:layout_gravity="center">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="63dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/ic_user_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical"
+                tools:layout_gravity="center">
+
+                <Button
+                    android:layout_width="34dp"
+                    android:layout_height="21dp"
+                    android:background="@mipmap/ic_tool">
+
+                </Button>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="tool">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
