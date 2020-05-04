@@ -11,19 +11,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Hi body!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.269" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="109dp"
-        android:layout_height="105dp"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:srcCompat="@tools:sample/avatars[2]" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ButtonOlsarnat"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="226dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
